@@ -1,6 +1,7 @@
 #! /bin/bash
 startHost=58
 stopHost=59
+
 for i in $(seq ${startHost} ${stopHost})
 do
 	scp -o StrictHostKeyChecking=no /linux-soft/03/redis/redis-4.0.8.tar.gz root@192.168.4.${i}:/root
